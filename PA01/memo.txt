@@ -1,0 +1,20 @@
+1. After reading in tinyST.txt there are 10 entries (13 characters in the file, but three redundancies. Hash keys are unique). After deleting "S" and "A", there are 8 valid entries but still 10 entries overall.    
+
+2. Run time in ms: 
+Symbol table Search Time 140
+Separate Chaining Search Time 90
+Linear Probing Search Time 45
+Sequential Search Time 42065
+
+The times may vary, of course, on different computers. These results were obtained on my 3 y/o macbook laptop. What's important to me is the difference in performance among different tables. 
+
+3. As expected, the two hash tables were the fastest since the lookup/insert time
+is on average constant (Linear probing came out consistently faster, but this can be a result of many factors). Next came the sorted symbol table, which is only slightly slower. The sequential search is the slowest by far, since every operation is linear. 
+
+4. The file tale.txt has 139043 words (based on wc -w tale.txt). 
+
+5. It has 19695 unique words (based on our very simple definition, considering capital/small letters and punctuations as different). See uniqueWords.txt.
+
+6. The most common word is 'the' (not surprisingly), which appears 7515 times. 
+
+
